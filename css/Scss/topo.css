@@ -1,0 +1,132 @@
+/* ---------------------- Topo ------------------ */
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  font-family: "Manrope", sans-serif;
+}
+header .topo {
+  background-color: white;
+}
+@media (max-width: 768px) {
+  header .topo {
+    background-color: white;
+    background-color: white;
+    box-shadow: 0px 0px 10px #d3d3d3;
+    display: flex;
+    align-items: center;
+  }
+}
+header .topo .topo-contato {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background-color: #970000;
+  color: white;
+  padding: 8px 0;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  header .topo .topo-contato {
+    display: none;
+  }
+}
+header .topo .topo-contato p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header .topo .topo-contato p img {
+  height: 16px;
+  width: 16px;
+  position: relative;
+  top: -1px;
+}
+header .topo .topo-logo-mobile2 {
+  display: none;
+  width: 100%;
+  justify-content: center;
+}
+header .topo .topo-logo-mobile2 img {
+  width: 230px;
+  padding: 20px 0;
+}
+@media (max-width: 768px) {
+  header .topo .topo-logo-mobile2 {
+    display: flex;
+  }
+}
+header .topo .topo-menu {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (max-width: 768px) {
+  header .topo .topo-menu {
+    display: none;
+  }
+}
+header .topo .topo-menu ul {
+  display: flex;
+  gap: 30px;
+}
+header .topo .topo-menu ul a {
+  color: #132c4a;
+  font-size: 18px;
+  font-family: "Manrope", sans-serif;
+}
+header .topo .topo-menu .topo-menu-esquerda,
+header .topo .topo-menu .topo-menu-direita {
+  min-width: 220px;
+  display: flex;
+  align-items: center;
+}
+header .topo .topo-menu .topo-logo {
+  display: flex;
+}
+header .topo .topo-menu .topo-logo img {
+  width: 250px;
+}
+header .topo .topo-menu .topo-logo-mobile {
+  display: none;
+}
+header .topo .topo-menu .topo-logo-mobile img {
+  width: 130px;
+}
+header .topo .burger {
+  padding-left: 20px;
+}
+@media (min-width: 769px) {
+  header .topo .burger {
+    display: none;
+  }
+}
+header .topo #menuMobile {
+  width: 100vw;
+  height: 100vh;
+  right: -100vw;
+  transition: 0.3s;
+  position: fixed;
+  top: 0;
+}
+header .topo #menuMobile i {
+  padding: 20px;
+}
+header .topo #menuMobile li {
+  padding: 15px 0;
+  border-bottom: solid 1px black;
+  width: 190px;
+  margin: 0 0 0 15px;
+}
+header .topo #menuMobile li a {
+  color: #000000;
+}
+header .topo #menuMobile.activeMenu {
+  right: 0;
+  background-color: rgb(255, 255, 255);
+}
+
+.topo-scroll {
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(211, 211, 211, 0.4588235294);
+}/*# sourceMappingURL=topo.css.map */

@@ -1,0 +1,11 @@
+﻿User-agent: *
+Disallow: /inc/
+Disallow: /libraries/
+Disallow: /ajax-midia/
+Disallow: /statusSite/
+Disallow: /_Documentos/
+Disallow: /_gerador/
+Disallow: /_temporario/
+Disallow: /formularios_backup/
+Disallow: /backup_recuperar/
+Sitemap: http://www.teste_site_base.com.br/sitemap.xml

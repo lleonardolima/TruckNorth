@@ -1,0 +1,173 @@
+.module-formulario {
+  .contactIndex {
+    margin: 0 auto;
+    padding: 50px 8% 50px 8%;
+    background-color: #f1f1f1;
+    font-family: "Manrope", sans-serif;
+
+    span {
+      text-transform: uppercase;
+      color: #083f87;
+      font-weight: bold;
+    }
+    h2 {
+      font-size: 44px;
+      padding-bottom: 20px;
+    }
+    .configContactIndex {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      @media (max-width: 1180px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .formIndex {
+        @media (max-width: 1180px) {
+          text-align: center;
+          margin-bottom: 40px;
+        }
+        form {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          max-width: 600px;
+          gap: 20px;
+          padding-top: 30px;
+          @media (max-width: 1180px) {
+            justify-content: center;
+          }
+          @media (max-width: 640px) {
+            flex-direction: column;
+            align-items: center;
+          }
+          .formCamp {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            label {
+              position: absolute;
+              top: 20px;
+              left: 10px;
+              transition: 0.3s;
+            }
+            input,
+            select,
+            textarea {
+              border: none;
+              background-color: #fafafa;
+              width: 260px;
+              border-radius: 10px;
+              height: 50px;
+              margin: 5px 0;
+              padding: 0 10px;
+            }
+            textarea {
+              width: 560px;
+              resize: none;
+              height: 100px;
+              padding: 10px;
+              line-height: 25px;
+              @media (max-width: 640px) {
+                width: 260px;
+              }
+            }
+            select {
+              min-width: 260px;
+              width: auto;
+              padding: 0;
+            }
+            input,
+            textarea {
+              &:focus,
+              &:valid {
+                ~ label {
+                  top: -12.5px;
+                  left: 0;
+                  font-size: 13px;
+                }
+              }
+            }
+          }
+          .conheceu {
+            width: calc(100% - 20px);
+
+            @media (max-width: 640px) {
+              width: 280px;
+            }
+          }
+          .submit {
+            background-color: #083f87;
+            width: 150px;
+            height: 40px;
+            color: white;
+            border: 1px solid transparent;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: 0.3s;
+          }
+        }
+      }
+      .mapsIndex {
+        text-align: right;
+        @media (max-width: 1180px) {
+          text-align: center;
+        }
+        iframe {
+          width: 520px;
+          height: 425px;
+          padding-top: 30px;
+          border-radius: 10px;
+          @media (max-width: 640px) {
+            max-width: 80%;
+            min-width: 280px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ---------------------- ReCaptcha Left ------------------ */
+.g-recaptcha {
+  margin: 2% 10%;
+}
+.grecaptcha-badge {
+  width: 70px !important;
+  overflow: hidden !important;
+  transition: all 0.3s ease !important;
+  left: -2px !important;
+  bottom: 40px !important;
+
+  &:hover {
+    width: 256px !important;
+  }
+
+  @media (max-width: 768px) {
+    bottom: 100px !important;
+  }
+}
+
+/* ---------------------- ALERTA DE ENVIO ------------------ */
+.formulario-enviado {
+  color: #4f8a10;
+  background-color: #dff2bf;
+  width: 70%;
+  font-size: 15px;
+  text-align: center;
+  padding: 15px 0;
+  margin-bottom: 15px;
+}
+.erro-captcha {
+  color: #d8000c;
+  background-color: #ffd2d2;
+  width: 70%;
+  font-size: 15px;
+  text-align: center;
+  padding: 15px 0;
+  margin-bottom: 15px;
+}

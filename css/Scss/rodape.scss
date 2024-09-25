@@ -1,0 +1,168 @@
+footer {
+  background-color: #00030e;
+  color: white;
+
+  .top {
+    display: flex;
+    align-items: center;
+    max-width: 1400px;
+    padding: 70px 20px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: stretch;
+    line-height: 30px;
+    li {
+      a {
+        position: relative;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+
+        &::before {
+          content: "";
+          background-color: #ffffff;
+          position: absolute;
+          left: 0px;
+          bottom: 0;
+          width: 100%;
+          height: 2px;
+          transform: scaleX(0);
+          transition: 0.4s ease;
+          transform-origin: left;
+        }
+        &:hover {
+          &::before {
+            transform: scaleX(1);
+          }
+        }
+      }
+    }
+    h3 {
+      font-size: 24px;
+      font-weight: 800;
+    }
+    .logoFooter {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media (max-width: 1024px) {
+        justify-content: flex-start;
+      }
+      img {
+        width: 280px;
+      }
+    }
+
+    .contactFooter {
+      .icon {
+        width: 16px;
+        padding: 0 5px 0 0;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      justify-items: center;
+    }
+    @media (max-width: 600px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      gap: 40px;
+    }
+  }
+  .bottomRowFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    border-top: 1px solid #565656;
+    @media (max-width: 840px) {
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+      line-height: 25px;
+    }
+    img {
+      width: 42px;
+      height: 60px;
+    }
+  }
+}
+
+/* ---------------------- Rodape Mobile ------------------ */
+.rodape-mobile {
+  width: 100%;
+  color: #ffffff;
+  background: #333;
+  height: auto;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  padding: 5px 0;
+  z-index: 9999;
+
+  .icones-rodape {
+    display: flex;
+    justify-content: space-around;
+
+    a {
+      margin: 5px 20px;
+    }
+
+    .phone {
+      background: #558ada;
+      padding: 11px 11px;
+      border-radius: 55px;
+    }
+    .envelope {
+      background: #f00;
+      padding: 11px 11px;
+      border-radius: 55px;
+    }
+    .whatsapp {
+      background-color: #49ca59;
+      border-radius: 55px;
+      padding: 11px 11px;
+    }
+  }
+
+  .voltar-para-o-topo-mobile {
+    right: 10px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 3px rgba(0, 0, 0, 0.2);
+    background: #777 url("assets/selos/top.webp") no-repeat center center;
+  }
+}
+
+/* ---------------------- Botao Voltar Ao Topo ------------------ */
+.voltar-para-o-topo {
+  display: none;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 3px rgba(0, 0, 0, 0.2);
+  background: #777 url("assets/selos/top.webp") no-repeat center center;
+}
+
+/* ---------------------- Botao Whatsapp ------------------ */
+.whatsapp-icon-fix {
+  position: fixed;
+  bottom: 80px;
+  right: 18px;
+  z-index: 999;
+
+  img {
+    width: 40px;
+    height: auto;
+  }
+}
